@@ -1,0 +1,15 @@
+html{
+  background-color: #800080;
+  color: white;
+}
+
+fieldset {
+  padding: 20px;
+  margin: 20px;
+  border: 1px white solid;
+  width: 50%;
+}
+
+legend{
+  font-weight: bold;
+}
