@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<grid-container>
+    <header>
+        <h1>Responsive and Accessible Design</h1>
+    </header>
+
+    <nav>
+        <p>MENU</p>
+        <ul>
+            <li><a href="https://www.columbusstate.edu/" tabindex = "4">CSU Website</a></li><br>
+            <li><a href="https://www.w3.org/TR/WCAG22/" tabindex = "5">Web Accessibility Standards</a></li><br>
+            <li><a href="https://responsivedesignchecker.com/" tabindex = "6">Responsive Web Design Checker</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <form id="frm1">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" tabindex="1"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe" tabindex="2"><br><br>
+            <input type="submit" value="Submit" tabindex="3">
+                <script>
+                document.getElementsByTagName('input')[0].focus();
+                </script>
+        </form>
+    </main>
+
+    <aside>
+        <svg width="50" height="50">
+            <img width="150" height="150" src="https://svgsilh.com/svg/2056977.svg" alt="Beautiful Butterfly">
+        </svg>
+    </aside>
+
+    <footer>
+    <p>Jessica Clover</p>
+    <p>Fall Semester 2024</p>
+    </footer>
+
+</grid-container>
+</html>
