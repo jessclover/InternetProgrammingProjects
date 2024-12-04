@@ -1,1 +1,42 @@
 
+@media (max-width:3920px) {
+.btn-sq-responsive {
+width: 200px;
+max-width: 100%;
+max-height: 100%;
+height: 200px;
+font-size:24px;
+}
+}
+
+@media (max-width:991px) {
+.btn-sq-responsive {
+width: 150px;
+max-width: 100%;
+max-height: 100%;
+height: 150px;
+font-size:18px;
+}
+}
+
+@media (max-width:767px) {
+.btn-sq-responsive {
+width: 100px;
+max-width: 100%;
+max-height: 100%;
+height: 100px; 
+font-size:12px;
+}
+}
+
+@media (max-width:575px) {
+.btn-sq-responsive {
+width: 50px;
+max-width: 100%;
+max-height: 100%;
+height: 50px;
+font-size:5px;
+padding: 0px;
+font-size:7px;
+}
+}
