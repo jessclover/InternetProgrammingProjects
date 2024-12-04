@@ -1,243 +1,126 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
 }
 
 header {
-    background-color: #222;
+    background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px #000;
 }
 
 header p {
     margin: 5px 0 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-main {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+nav {
+    background: #111;
+    border-bottom: 2px solid #ff0080;
 }
 
-main h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
- main1 {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-.faq {
-    margin: 20px 0;
-}
-
-.faq-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.faq-content {
-    flex: 3;
-    padding: 20px;
-}
-
-.faq-section {
-    margin-bottom: 20px;
-}
-
-.faq-nav {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    background: #222;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.faq-nav button {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #444;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: left;
-    font-size: 1rem;
-}
-
-.faq-nav button:hover {
-    background: #666;
-}
-
-.faq-nav button:focus {
-    outline: none;
-    background: #555;
-}
-     
-details {
-    background: #fff;
-    margin-bottom: 10px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-details summary {
+.navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 1.1rem;
-    cursor: pointer;
-    outline: none;
 }
 
-details p {
-    margin: 10px 0 0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #555;
+.navbar-nav .nav-link:hover {
+    color: #ff0080;
+    text-shadow: 0 0 10px #ff0080;
+}
+
+/* Buttons */
+button, .btn {
+    background: #ff0080;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background: #40e0d0;
+    box-shadow: 0 0 15px #ff0080;
 }
 
 section {
+    padding: 30px 20px;
     margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-     
-h1, h2, h3 {
-    color: #222;
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+    color: #ff0080;
 }
-        
-label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.8);
 }
-     
-input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ff0080;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ff0080;
 }
-     
-input[type="radio"], input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-}
-     
-.radio-group, .checkbox-group {
-    margin-bottom: 15px;
-}
-     
-button {
-    background-color: #222;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-     
-button:hover {
-    background-color: #444;
-}
-        
-.thank-you {
-    text-align: center;
-    font-size: 1.2rem;
-    color: green;
-    margin-top: 20px;
-}
-     
+
 footer {
-    text-align: center;
-    background-color: #222;
+    background: #111;
     color: #fff;
-    padding: 15px 0;
-    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ff0080;
 }
 
 footer a {
-    color: #ff6347;
+    color: #40e0d0;
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #ff8c00;
+    text-shadow: 0 0 10px #ff8c00;
 }
 
-ul {
-    list-style: disc;
-    margin-left: 20px;
-}
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-@media (max-width:3920px) {
-.btn-sq-responsive {
-width: 200px;
-max-width: 100%;
-max-height: 100%;
-height: 200px;
-font-size:24px;
-}
-}
+    h2 {
+        font-size: 2rem;
+    }
 
-@media (max-width:991px) {
-.btn-sq-responsive {
-width: 150px;
-max-width: 100%;
-max-height: 100%;
-height: 150px;
-font-size:18px;
-}
-}
+    .carousel-item img {
+        height: 300px;
+    }
 
-@media (max-width:767px) {
-.btn-sq-responsive {
-width: 100px;
-max-width: 100%;
-max-height: 100%;
-height: 100px; 
-font-size:12px;
-}
-}
-
-@media (max-width:575px) {
-.btn-sq-responsive {
-width: 50px;
-max-width: 100%;
-max-height: 100%;
-height: 50px;
-font-size:5px;
-padding: 0px;
-font-size:7px;
-}
+    button, .btn {
+        font-size: 1rem;
+    }
 }
