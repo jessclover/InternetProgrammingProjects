@@ -48,6 +48,60 @@ main h2 {
     margin: 20px 0;
 }
 
+.faq-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.faq-section {
+    margin-bottom: 20px;
+}
+
+.faq-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-nav button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.faq-nav button:hover {
+    background: #666;
+}
+
+.faq-nav button:focus {
+    outline: none;
+    background: #555;
+}
+     
 details {
     background: #fff;
     margin-bottom: 10px;
