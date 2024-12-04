@@ -25,9 +25,10 @@ header p {
 }
 
 main {
+    background: white;
     padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
@@ -126,10 +127,10 @@ details p {
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
      
-h2, h3 {
+h1, h2, h3 {
     color: #222;
 }
         
@@ -192,6 +193,11 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
 }
 
 @media (max-width:3920px) {
