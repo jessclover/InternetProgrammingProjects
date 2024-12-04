@@ -6,6 +6,31 @@ body {
     color: #ffffff;
 }
 
+.glow-text {
+    text-shadow: 0 0 8px #ff0080, 0 0 16px #ff8c00, 0 0 24px #40e0d0;
+    color: #fff;
+}
+
+.highlight-link {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.highlight-link:hover {
+    text-shadow: 0 0 5px #ff0080;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+ul.list-unstyled li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
 header {
     background: linear-gradient(to right, #ff0080, #ff8c00, #40e0d0);
     color: #fff;
@@ -42,7 +67,6 @@ nav {
     text-shadow: 0 0 10px #ff0080;
 }
 
-/* Buttons */
 button, .btn {
     background: #ff0080;
     border: none;
@@ -106,7 +130,6 @@ footer a:hover {
     text-shadow: 0 0 10px #ff8c00;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
