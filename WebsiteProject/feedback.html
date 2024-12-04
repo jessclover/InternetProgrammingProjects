@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feedback Form for Rock The Town Festival">
+    <title>Rock Festival Feedback Form</title>
 
+</head>
+<body>
+    <header>
+        <h1>Rock The Town Feedback Form</h1>
+        <p>We value your feedback to make next year's festival even better!</p>
+    </header>
+    <main>
+        <form id="feedbackForm">
+            <section>
+                <h2>Festival Experience</h2>
+                <label>How would you rate your overall experience at the music festival?</label>
+                <div class="radio-group">
+                    <input type="radio" id="excellent" name="experience" value="Excellent" required>
+                    <label for="excellent">Excellent</label>
+                    <input type="radio" id="good" name="experience" value="Good">
+                    <label for="good">Good</label>
+                    <input type="radio" id="average" name="experience" value="Average">
+                    <label for="average">Average</label>
+                    <input type="radio" id="poor" name="experience" value="Poor">
+                    <label for="poor">Poor</label>
+                </div>
+
+                <label>What was your favorite part of the festival?</label>
+                <textarea name="favoritePart" rows="3" placeholder="Describe here..."></textarea>
+
+                <label>Was there anything you did not enjoy about the festival?</label>
+                <textarea name="leastEnjoyed" rows="3" placeholder="Describe here..."></textarea>
+            </section>
+
+            <section>
+                <h2>Music Quality</h2>
+                <label>How would you rate the quality of the music at the festival?</label>
+                <select name="musicQuality" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+
+                <label>What was your favorite performance at the festival?</label>
+                <textarea name="favoritePerformance" rows="2" placeholder="Enter artist or band name..."></textarea>
+
+                <label>Is there a particular band you would like to see perform here next year?</label>
+                <textarea name="nextYearBands" rows="2" placeholder="Enter artist or band name..."></textarea>
+            </section>
+
+            <section>
+                <h2>Facilities and Logistics</h2>
+                <label>How would you rate the festival's facilities (e.g., restrooms, food and drink options, seating, etc.)?</label>
+                <select name="facilitiesRating" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+
+                <label>Were there any logistical issues (e.g., lines, transportation, parking) that you encountered? If yes, please specify:</label>
+                <textarea name="logisticsIssues" rows="3" placeholder="Describe here..."></textarea>
+
+                <label>How would you rate the festival's communication before and during the event?</label>
+                <select name="communicationRating" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+
+                <label>Was there anything you wish you had known about the festival beforehand that you did not find out until you arrived?</label>
+                <textarea name="preEventInfo" rows="3" placeholder="Describe here..."></textarea>
+            </section>
+
+            <section>
+                <h2>About You</h2>
+                <label>Age Group:</label>
+                <div class="radio-group">
+                    <input type="radio" id="age1" name="ageGroup" value="Under 18">
+                    <label for="age1">Under 18</label>
+                    <input type="radio" id="age2" name="ageGroup" value="18-24">
+                    <label for="age2">18-24</label>
+                    <input type="radio" id="age3" name="ageGroup" value="25-34">
+                    <label for="age3">25-34</label>
+                    <input type="radio" id="age4" name="ageGroup" value="35-44">
+                    <label for="age4">35-44</label>
+                    <input type="radio" id="age5" name="ageGroup" value="45+">
+                    <label for="age5">45+</label>
+                </div>
+
+                <label>How did you hear about the festival?</label>
+                <textarea name="referral" rows="2" placeholder="Describe here..."></textarea>
+            </section>
+
+            <button type="button" onclick="submitForm()">Submit Feedback</button>
+
+            <div id="thankYouMessage" class="thank-you" style="display: none;">
+                Thank you for your feedback! We appreciate your input.
+            </div>
+        </form>
+    </main>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('feedbackForm');
+            if (form.checkValidity()) {
+                form.reset();
+                document.getElementById('thankYouMessage').style.display = 'block';
+                window.scrollTo(0, 0);
+            } else {
+                alert('Please complete all required fields.');
+            }
+        }
+    </script>
+</body>
+</html>
