@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frequently Asked Questions - Rock The Town Festival">
     <title>FAQs - Rock The Town</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -21,9 +21,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="homepage.index.html">Home</a>
+                    <a class="nav-link" href="homepage.index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="eventinfo.index.html">Event Information</a>
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="tickets.index.html">Tickets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="faqs.index.html">FAQs</a>
+                    <a class="nav-link active" href="faqs.index.html">FAQs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="feedback.index.html">Event Feedback Form</a>
@@ -41,40 +41,47 @@
         </div>
     </nav>
 
- <main>
-    <div class="faq-container">
-        <div class="faq-content">
-            <h1>Frequently Asked Questions</h1>
-            <div id="general-info" class="faq-section">
-                <h2>General Information</h2>
-                <p><strong>Q: What are the festival dates?</strong></p>
-                <p>A: The festival will be held from June 14-16, 2024.</p>
-                <p><strong>Q: Where is the festival located?</strong></p>
-                <p>A: The festival takes place in downtown Columbus, GA, near Riverwalk Park.</p>
+    <header class="text-center py-5">
+        <h1 class="glow-text">Frequently Asked Questions</h1>
+        <p class="text-light">Everything you need to know about Rock The Town Music Festival!</p>
+    </header>
+
+    <main class="container mt-4">
+        <div class="faq-container d-flex">
+            <div class="faq-content flex-grow-1 p-3">
+                <div id="general-info" class="faq-section mb-5">
+                    <h2 class="section-title glow-text">General Information</h2>
+                    <p><strong>Q: What are the festival dates?</strong></p>
+                    <p>A: The festival will be held from June 14-16, 2024.</p>
+                    <p><strong>Q: Where is the festival located?</strong></p>
+                    <p>A: The festival takes place in downtown Columbus, GA, near Riverwalk Park.</p>
+                </div>
+
+                <div id="tickets" class="faq-section mb-5">
+                    <h2 class="section-title glow-text">Tickets</h2>
+                    <p><strong>Q: Are tickets refundable?</strong></p>
+                    <p>A: Tickets are non-refundable, except in the event of festival cancellation.</p>
+                    <p><strong>Q: Can I transfer my ticket to someone else?</strong></p>
+                    <p>A: Yes, tickets can be transferred by contacting our support team.</p>
+                </div>
+
+                <div id="parking" class="faq-section">
+                    <h2 class="section-title glow-text">Parking and Transportation</h2>
+                    <p><strong>Q: Is parking available?</strong></p>
+                    <p>A: Parking is available at designated lots downtown. Public transport and rideshares are recommended.</p>
+                    <p><strong>Q: Are shuttles provided?</strong></p>
+                    <p>A: Yes, free shuttle services will run between key locations and the festival site.</p>
+                </div>
             </div>
-            <div id="tickets" class="faq-section">
-                <h2>Tickets</h2>
-                <p><strong>Q: Are tickets refundable?</strong></p>
-                <p>A: Tickets are non-refundable, except in the event of festival cancellation.</p>
-                <p><strong>Q: Can I transfer my ticket to someone else?</strong></p>
-                <p>A: Yes, tickets can be transferred by contacting our support team.</p>
-            </div>
-            <div id="parking" class="faq-section">
-                <h2>Parking and Transportation</h2>
-                <p><strong>Q: Is parking available?</strong></p>
-                <p>A: Parking is available at designated lots downtown. Public transport and rideshares are recommended.</p>
-                <p><strong>Q: Are shuttles provided?</strong></p>
-                <p>A: Yes, free shuttle services will run between key locations and the festival site.</p>
-            </div>
+
+            <aside class="faq-nav ms-4 p-3 text-center bg-dark text-light rounded">
+                <h3 class="glow-text">FAQ Topics</h3>
+                <button onclick="scrollToSection('general-info')" class="btn btn-dark glow-btn my-2">General Info</button>
+                <button onclick="scrollToSection('tickets')" class="btn btn-dark glow-btn my-2">Tickets</button>
+                <button onclick="scrollToSection('parking')" class="btn btn-dark glow-btn my-2">Parking</button>
+            </aside>
         </div>
-    
-        <div class="faq-nav">
-            <button onclick="scrollToSection('general-info')">General Info</button>
-            <button onclick="scrollToSection('tickets')">Tickets</button>
-            <button onclick="scrollToSection('parking')">Parking</button>
-        </div>
-    </div>
-  </main>
+    </main>
 
     <script>
         function scrollToSection(sectionId) {
@@ -82,9 +89,10 @@
             section.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
-    
-<footer class="text-center py-3 bg-dark text-white">
-        &copy; 2024 Rock The Town Festival. All rights reserved.
-</footer>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 Rock The Town Festival. All Rights Reserved.</p>
+        <a href="faqs.index.html" class="highlight-link">Back to Top</a>
+    </footer>
 </body>
 </html>
