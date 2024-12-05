@@ -55,6 +55,24 @@ nav {
     border-bottom: 2px solid #ff0080;
 }
 
+.faq-nav {
+    min-width: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.glow-btn {
+    background: linear-gradient(to right, #ff0080, #ff8c00);
+    color: white;
+    text-shadow: 0 0 10px #ff0080;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.glow-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff0080, 0 0 30px #ff8c00;
+}
+
 .navbar-nav .nav-link {
     color: #fff;
     text-transform: uppercase;
