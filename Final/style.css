@@ -46,7 +46,8 @@ footer {
   background-color: #98b4ec;
   color: #104b9a;
   font-family: Times New Roman, Times, serif;
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 1.4rem
   padding: 10px;
   text-align: center;
 }
