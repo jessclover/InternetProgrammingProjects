@@ -24,7 +24,7 @@ body {
   color: #104b9a;
 }
 
-.row{
+.col-md-8{
   background: #104b9a;
 }
 
@@ -45,8 +45,12 @@ nav {
 main {
   background-color: #e3e9fe;
   text-align: left;
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
+}
+
+.col{
+  
 }
 
 footer {
