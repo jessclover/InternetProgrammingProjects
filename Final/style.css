@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html{
-    background-color: #98b4ec;
-}
-
 h1{
   font-family: Brush Script MT, cursive;
   font-color: #104b9a; 
@@ -16,9 +12,9 @@ body {
     line-height: 1.6;
 }
 
-/*.row{
+.row{
   background: #98b4ec;
-}*/
+}
 
 ul {
   list-style-type: none;
@@ -26,9 +22,13 @@ ul {
 
 nav {
   background-color: #104b9a;
-  font-size: bold;
-  font-color: white;
-  text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 main {
