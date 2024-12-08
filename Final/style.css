@@ -6,6 +6,13 @@ h1{
   font-family: Brush Script MT, cursive;
 }
 
+h3{
+  font-family: Arial, sans-serif;
+  font-size: 1.7 rem;
+  font-weight: bold;
+  color: #104b9a;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
