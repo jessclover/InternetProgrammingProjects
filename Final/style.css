@@ -7,7 +7,8 @@ html{
 }
 
 h1{
-  font-family: 'Brush Script MT', cursive;
+  font-family: Brush Script MT, cursive;
+  font-color: #104b9a; 
 }
 
 body {
@@ -21,57 +22,28 @@ body {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  grid-area: header;
-  background-color: #4dd0e1;
-  text-align: center;
 }
 
 nav {
-  grid-area: nav;
-  background-color: #ba68c8;
-  text-align: left;
+  background-color: #104b9a;
+  font-size: bold;
+  font-color: white;
+  text-align: center;
 }
 
 main {
-  grid-area: main;
-  background-color: #9fa8da;
-  text-align: center;
-}
-
-aside {
-  grid-area: aside;
-  background-color: #ba68c8;
-  padding: 10px;
-  height:  500px;
-  text-align: center;
+  background-color: #e3e9fe;
+  text-align: left;
 }
 
 footer {
-  grid-area: footer;
-  background-color: #4dd0e1;
+  background-color: #98b4ec;
   padding: 10px;
-  text-align: right;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .carousel-item img {
-        height: 300px;
-    }
-
-    button, .btn {
-        font-size: 1rem;
     }
 }
