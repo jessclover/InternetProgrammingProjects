@@ -4,7 +4,6 @@
 
 h1{
   font-family: Brush Script MT, cursive;
-  font-color: #104b9a; 
 }
 
 body {
@@ -12,8 +11,14 @@ body {
     line-height: 1.6;
 }
 
-.row{
+.col-md-4{
   background: #98b4ec;
+  font-weight: bold;
+  color: #104b9a;
+}
+
+.row{
+  background: #104b9a;
 }
 
 ul {
@@ -26,9 +31,8 @@ nav {
 
 .navbar-nav .nav-link {
     color: #fff;
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 main {
@@ -44,6 +48,6 @@ footer {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 }
