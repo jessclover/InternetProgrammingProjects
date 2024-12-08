@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Scrub-A-Dog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrub-A-Dog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <grid-container>
-        <header>
-            <div class="logo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md text-black text-center p-3">
                 <h1>Scrub-A-Dog</h1>
                 <p>Clean Pets. Clean Owners.</p>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="hamburger" onclick="toggleMenu()">☰</button>
-            </nav>
-            <div class="banner">
-                <img src="../images/dog-banner.jpg" alt="Dog Banner">
+
+            <div class="col-md text-black text-center p-3">
+                <nav class = "navbar navbar-expand-md">
+                    <button
+                    class = "navbar-toggler"
+                    type = "button"
+                    data-bs-toggle = "collapse"
+                    data-bs-target = "#toggleMobileMenu"
+                    aria-controls = "toggleMobileMenu"
+                    aria-expanded = "false"
+                    aria-lable = "Toggle navigation"
+                    >
+
+                    <span class = "navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class = "collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.index.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="booking.index.html">Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.index.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </header>
+        </div>  
+    </div>
+    <div class="container-fluid">
         <main>
+            <img width="100%" src="images/dog-banner.jpg" alt="Dog Banner">
             <p>
                 <!-- This is where the main text goes -->
             </p>
         </main>
+    </div>
+        
         <footer>
             <p>&copy; 2024 Scrub-A-Dog | Contact: info@scrubadog.com</p>
         </footer>
-        <script src="script.js"></script>
     </grid-container>
+    <script src="script.js"></script>
 </body>
 </html>

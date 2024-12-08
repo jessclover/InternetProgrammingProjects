@@ -20,97 +20,49 @@
           'nav' 
           'main' 
           'footer';
+    }
+}
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    text-align: center;
-    background-color: #3366cc;
-    color: white;
-    padding: 1em 0;
-}
-
-header .logo h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-header .logo p {
-    font-size: 1em;
-    margin-bottom: 1em;
+  grid-area: header;
+  background-color: #4dd0e1;
+  text-align: center;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #003399;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2em;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hamburger {
-    display: none;
-    background: none;
-    color: white;
-    font-size: 1.5em;
-    border: none;
-    cursor: pointer;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
+  grid-area: nav;
+  background-color: #ba68c8;
+  text-align: left;
 }
 
 main {
-    padding: 2em;
-    text-align: center;
-    background-color: #f0f8ff;
-    color: #003366;
+  grid-area: main;
+  background-color: #9fa8da;
+  text-align: center;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #ba68c8;
+  padding: 10px;
+  height:  500px;
+  text-align: center;
 }
 
 footer {
-    text-align: center;
-    background-color: #003399;
-    color: white;
-    padding: 1em 0;
-}
-
-@media (max-width: 768px) {
-    nav .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 1em;
-        background-color: #003399;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        padding: 1em 0;
-    }
-
-    nav .nav-links.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .banner img {
-        display: none;
-    }
+  grid-area: footer;
+  background-color: #4dd0e1;
+  padding: 10px;
+  text-align: right;
 }
