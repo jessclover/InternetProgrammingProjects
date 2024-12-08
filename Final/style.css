@@ -38,10 +38,15 @@ nav {
 main {
   background-color: #e3e9fe;
   text-align: left;
+  padding: 0px;
+  margin: 0px;
 }
 
 footer {
   background-color: #98b4ec;
+  color: #104b9a;
+  font-family: Times New Roman, Times, serif;
+    font-weight: bold;
   padding: 10px;
   text-align: center;
 }
