@@ -3,13 +3,17 @@
 }
 
 html{
-    background-color: ##98b4ec;
+    background-color: #98b4ec;
 }
 
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+
+.row{
+  background:;
 }
 
 ul {
