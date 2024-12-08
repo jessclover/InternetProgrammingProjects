@@ -6,6 +6,9 @@ html{
     background-color: #98b4ec;
 }
 
+h1{
+  font-family: 'Brush Script MT', cursive;
+}
 
 body {
     font-family: Arial, sans-serif;
