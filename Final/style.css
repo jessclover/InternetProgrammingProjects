@@ -49,6 +49,10 @@ main {
   margin: 0px;
 }
 
+main img{
+  border-radius: 8px;
+}
+
 .col{
   
 }
