@@ -50,6 +50,13 @@ main {
   margin: 0px;
 }
 
+main1 {
+  background-color: #e3e9fe;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
 img{
   border-radius: 8px;
 }
